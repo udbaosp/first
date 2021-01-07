@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="15">
+        <ImageButton
+            android:layout_marginTop="3dp"
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="2.5"
+            android:background="#FFFFFF"
+            android:src="@drawable/ic_baseline_close_24"/>
+        <TextView
+            android:id="@+id/addAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:layout_weight="10"
+            android:text="Add alarm"
+            android:textColor="#000000"
+            android:gravity="center" />
+        <ImageButton
+            android:layout_marginTop="3dp"
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="2.5"
+            android:background="#FFFFFF"
+            android:src="@drawable/ic_baseline_check_24"
+            />
+
+
+
+    </LinearLayout>
+
+    <TimePicker
+        android:layout_marginTop="20dp"
+        android:id="@+id/timePicker"
+        android:gravity="center"
+        android:numbersTextColor="#000000"
+        android:scrollbarSize="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"/>
+
+</LinearLayout>
